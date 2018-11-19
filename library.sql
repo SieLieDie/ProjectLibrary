@@ -90,7 +90,7 @@ ALTER TABLE `library`.`user` ADD CONSTRAINT `user_fk0` FOREIGN KEY (`role_id`) R
 INSERT INTO `library`.`user_role` (`role_name`) VALUES ('admin');
 INSERT INTO `library`.`user_role` (`role_name`) VALUES ('user');
 
-INSERT INTO `library`.`user` (`login`, `password`, `role_id`, `first_name`, `second_name`) VALUES ('ivan18', '$12$6CrNQmbL4LG43iItIP1frugsUiS1Ba9Kw3aU6Cr.gINCjgDfyR1f2', '1', 'Ivan', 'Sergeev');
+INSERT INTO `library`.`user` (`login`, `password`, `role_id`, `first_name`, `second_name`) VALUES ('ivan18', '$2a$12$Ir7.p7HyTTZYAAfWS5vEE.ZLfB9BjQawC7J/MeoFQ/l68vn4Bc7ym', '1', 'Ivan', 'Sergeev');
 INSERT INTO `library`.`user` (`login`, `password`, `role_id`, `first_name`, `second_name`) VALUES ('vasia21', '$2a$12$s.6qqQjs6VIpwhwQIcdvGuHDLCkk18x5Zt/pg0/FZmofGS/B0vwgi', '2', 'Vasia', 'Ydin');
 
 INSERT INTO `library`.`book` (`book_name`, `in_stoke`, `description`) VALUES ('Alice’s Adventures in Wonderland', '1', 'Alice\'s Adventures in Wonderland is a popular book by Lewis Carroll. Read Alice\'s Adventures in Wonderland, free online version of the book by Lewis Carroll, on ReadCentral.com. ');
