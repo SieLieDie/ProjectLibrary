@@ -86,6 +86,7 @@ ALTER TABLE `library`.`book_genre` ADD CONSTRAINT `book_genre_fk1` FOREIGN KEY (
 ALTER TABLE `library`.`monitored` ADD CONSTRAINT `monitored_fk0` FOREIGN KEY (`user_id`) REFERENCES `user`(`user_id`);
 ALTER TABLE `library`.`monitored` ADD CONSTRAINT `monitored_fk1` FOREIGN KEY (`book_id`) REFERENCES `book`(`book_id`);
 ALTER TABLE `library`.`user` ADD CONSTRAINT `user_fk0` FOREIGN KEY (`role_id`) REFERENCES `user_role`(`role_id`);
+ALTER TABLE 'library'.'book' CHANGE COLUMN 'in_stoke' 'in_stock' INT(3) UNSIGNED NOT NULL;
 
 INSERT INTO `library`.`user_role` (`role_name`) VALUES ('admin');
 INSERT INTO `library`.`user_role` (`role_name`) VALUES ('user');
